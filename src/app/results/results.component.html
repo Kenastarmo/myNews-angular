@@ -1,0 +1,30 @@
+<div class="main_container_results d-flex flex-column " style="gap:20px; padding-bottom: 20px;">
+<div class="container upper_grid w-full p-0 "
+    style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2,(0,220px)); gap:20px;">
+    <app-card *ngFor="let result of first4Results; let i = index" [headline]="result.headline.main"
+        [src]="result.multimedia" [defaultImg]="defaultImg">
+    </app-card>
+
+    <div class="rounded p-4 " 
+        style="grid-row-start: 1; grid-row-end: 3; grid-column-start: 3; background-color: white;  overflow: scroll; overflow-x: auto;">
+        <div class="unutrasnji_desni_div d-flex justify-content-start flex-column" style="max-height: 440px;">
+            <div class="d-flex flex-row align-items-center justify-content-start gap-2 mb-2">  
+                <div class="d-flex align-items-center justify-content-center" style="width: 28px; height: 28px; background-color: #FACBD0; border-radius: 100%;">
+                    <div class="" style="width:11px; height:11px; border-radius: 100%; background-color:#DC3545"></div>    
+                </div>
+                <h6 style="font-size: 20px; font-weight: 600; margin: 0;"> Latest News</h6>
+            </div>
+            <app-lates-news-component></app-lates-news-component>
+            
+        </div>
+    </div>  
+</div>
+
+<div class="down_grid w-full" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+    <app-card *ngFor="let result of otherResults; let i = index" [headline]="result.headline.main"
+        [src]="result.multimedia" [defaultImg]="defaultImg">
+    </app-card>
+
+</div>
+</div>

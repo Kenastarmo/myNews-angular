@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header.component';
+// import { NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+// import { HeaderComponent } from './header.component';
+// import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 
-@NgModule({
-  declarations: [HeaderComponent],  // Deklariši HeaderComponent
-  imports: [CommonModule],  // Ako koristiš direktive kao što su ngIf ili ngFor
-  exports: [HeaderComponent]  // Izvezi HeaderComponent da bi ga drugi moduli mogli koristiti
-})
-export class HeaderModule {}
+// @NgModule({
+//   declarations: [HeaderComponent],
+//   imports: [CommonModule],
+//   exports: [HeaderComponent], // Omogućava da se HeaderComponent koristi u drugim modulima
+//   //schema: [CUSTOM_ELEMENTS_SCHEMA]
+// })
+// export class HeaderModule {}

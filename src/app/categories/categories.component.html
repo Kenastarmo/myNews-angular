@@ -1,0 +1,20 @@
+<div class="w-full d-flex flex-column gap-2">
+
+    <!-- <button *ngFor="let categoryObj of categories, let i = index"
+    (click)="setCategory(categoryObj.value, i)"
+    [ngClass]="activeIndex === i ? 'active' : ''"
+    >
+    {{categoryObj.categoryName}}
+    </button> -->
+    
+    <div class="p-2 border1 d-flex justify-content-center align-items-center rounded" 
+    *ngFor="let categoryObj of categories, let i = index"
+    style="width:50px; height: 50px; cursor: pointer;"
+    [ngStyle]="{'background-color' : activeIndex == i ? 'white' : ''}"
+    (click)=" setCategory(categoryObj.value, i)"
+    >
+
+    <img [src]="activeIndex == i ? categoryObj.redImg : categoryObj.blackImg" style="max-height:14px; height:14px;">
+    </div>
+
+</div>

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: red;
+}
+
+.active{
+    background-color: red; 
+}
+
+.border1{
+    border:1px solid rgba(47, 47, 47, 0.16);
+}
